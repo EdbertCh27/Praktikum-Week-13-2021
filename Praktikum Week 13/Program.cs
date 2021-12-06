@@ -4,11 +4,11 @@ public class Program
 {
     public static void Main()
     {
-        int dataOrang = 10000;
-        int Status = 0;
+        int dataOrang = 99999;
+        int statusProgram = 0;
         string[,] DaftarData = new string[dataOrang, 7];
         dataOrang = 0;
-        while (Status == 0)
+        while (statusProgram == 0)
         {
             Console.Write("Berapa Data = ");
             int inputData = Convert.ToInt16(Console.ReadLine());
@@ -71,7 +71,7 @@ public class Program
             }
             else
             {
-                Status = 1;
+                statusProgram = 1;
             }
 
             Console.Write("Tambah Data? (y/n) ...");
@@ -85,12 +85,12 @@ public class Program
 
             if (inputBaru == "y")
             {
-                Status = 0;
+                statusProgram = 0;
                 Console.Clear();
             }
             else
             {
-                Status = 1;
+                statusProgram = 1;
             }
         }
     }
