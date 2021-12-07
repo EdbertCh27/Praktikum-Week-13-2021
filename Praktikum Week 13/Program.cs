@@ -18,7 +18,7 @@ public class Program
             {
                 Console.WriteLine("Data ke-" + inputTerus);
 
-                Console.Write("NIM : ");
+                Console.Write("NIM \t\t: ");
                 DaftarData[inputTerus - 1, 0] = Console.ReadLine();
                 for (int cekNIM = 0; cekNIM <= inputTerus; cekNIM++)
                 {
@@ -27,25 +27,25 @@ public class Program
                         while (DaftarData[inputTerus - 1, 0] == DaftarData[cekNIM, 0])
                         {
                             Console.WriteLine("NIM SUDAH ADA, MASUKKAN NIM LAIN !!!");
-                            Console.Write("NIM : ");
+                            Console.Write("NIM \t\t: ");
                             DaftarData[inputTerus - 1, 0] = Console.ReadLine();
                         }
                     }
                 }
 
-                Console.Write("NAMA : ");
+                Console.Write("NAMA \t\t: ");
                 DaftarData[inputTerus - 1, 1] = Console.ReadLine();
 
-                Console.Write("JENIS KELAMIN : ");
+                Console.Write("JENIS KELAMIN \t: ");
                 DaftarData[inputTerus - 1, 2] = Console.ReadLine();
 
-                Console.Write("TAHUN MASUK : ");
+                Console.Write("TAHUN MASUK \t: ");
                 DaftarData[inputTerus - 1, 3] = Console.ReadLine();
 
-                Console.Write("PROGRAM STUDI : ");
+                Console.Write("PROGRAM STUDI \t: ");
                 DaftarData[inputTerus - 1, 4] = Console.ReadLine();
 
-                Console.Write("KELAS : ");
+                Console.Write("KELAS \t\t: ");
                 DaftarData[inputTerus - 1, 5] = Console.ReadLine();
                 Console.WriteLine();
             }
